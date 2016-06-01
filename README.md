@@ -2,7 +2,7 @@ Simulador MFU:
 ====================================
 Un simple simulador en html5.
 
-Seundo algoritmo MFU
+Seudo algoritmo MFU
 -----------------------------------------
 
 		Para cada n en la secuencia:
