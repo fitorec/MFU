@@ -22,8 +22,8 @@ Descripción de archivos.
 
 	.
 	├── css
-	│   └── style.css	<-- Estilo del app
-	├── index.html		<-- Aplicación
+	│   └── style.css			<-- Estilo del app
+	├── index.html				<-- Aplicación
 	└── js
-		├── app.js		<-- Js de la app
-		└── jquery-1.11.3.js
+		├── app.js				<-- Js de la app
+		└── jquery-1.11.3.js	<- Librería jQuery

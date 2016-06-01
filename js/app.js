@@ -46,7 +46,7 @@ $(function () {
 	});
 });
 /**
- *	Seundo algoritmo MFU
+ *	Seudo algoritmo MFU
  * =========================
  * 		Para cada n en la secuencia:
  * 			Si Existe un frame vació:
