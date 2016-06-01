@@ -1,0 +1,67 @@
+body {
+	background: #EEE;
+	padding: 20px 100px;
+	font-size: 2em;
+}
+#solicitud_datos {}
+h3 {
+	color: #077000
+}
+button{
+	background: #0E4582;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+button:hover{
+	background:#D12700;
+}
+#fallos{
+	background: #C02319;
+	color: white;
+	border-radius: 20px;
+	padding: 0 15px;
+}
+/*#resultados{display:none}*/
+#resultados table{
+	width: 100%;
+}
+
+.secuencia{
+	display:inline-block;
+	width: 130px;
+	margin: 0;
+}
+.secuencia h3{
+	text-align: center;
+}
+.secuencia .pagina {
+	margin: 3px;
+	background: #4D4D4D;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.secuencia .pagina.error {
+	background: #FF73D3;
+}
+.secuencia .pagina span{
+	display: block;
+}
+.secuencia .pagina span.frecuencia {
+	display: inline;
+	padding: 0 15px;
+	background: #A90808;
+	color: white;
+	margin-right: 250px;
+	border-radius: 20px;
+}
+.secuencia .pagina span.numero {
+	font-size: 50px;
+	text-align: center;
+}
+
+.secuencia .pagina span.hora {
+	background: black;
+	color: white;
+}
