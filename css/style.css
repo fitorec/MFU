@@ -1,11 +1,14 @@
 body {
 	background: #EEE;
-	padding: 20px 100px;
+	padding: 20px 20px;
 	font-size: 2em;
 }
 #solicitud_datos {}
 h3 {
 	color: #077000
+}
+#resultados h3{
+	margin:0;
 }
 button{
 	background: #0E4582;
@@ -27,41 +30,70 @@ button:hover{
 	width: 100%;
 }
 
+#resultados button[disabled=disabled]:hover,
+#resultados button[disabled=disabled] {
+	background: #BFBFBF;
+	color: #4D4D4D;
+}
+
+#resultados table td.revisado {
+	color: #9D0011;
+	background: #BFBFBF;
+}
+.secuencia h3{
+	color: #4D4D4D;
+}
+.secuencia.con-fallo h3{
+	color: #FE0000;
+}
+
+.secuencia.con-fallo{
+	background: #FFC0CB;
+}
 .secuencia{
+	background: white;
 	display:inline-block;
-	width: 130px;
+	width: 70px;
 	margin: 0;
+	border-right: 1px solid rgba(0,0,0,0.5);
 }
 .secuencia h3{
 	text-align: center;
 }
-.secuencia .pagina {
+.secuencia .frame{
 	margin: 3px;
-	background: #4D4D4D;
+	background: #BFBFBF;
 	border-radius: 15px;
 	overflow: hidden;
 }
 
-.secuencia .pagina.error {
-	background: #FF73D3;
+.secuencia .frame.fallo {
+	background: #D33AA3;
 }
-.secuencia .pagina span{
+
+.secuencia .frame span{
 	display: block;
 }
-.secuencia .pagina span.frecuencia {
+.secuencia .frame span.frecuencia {
 	display: inline;
 	padding: 0 15px;
 	background: #A90808;
 	color: white;
-	margin-right: 250px;
 	border-radius: 20px;
+	float: right;
 }
-.secuencia .pagina span.numero {
+.secuencia.con-fallo .frame span.frecuencia{
+	background: #540000;
+}
+.secuencia .frame span.numero {
+	padding-top: 20px;
 	font-size: 50px;
 	text-align: center;
 }
 
-.secuencia .pagina span.hora {
+.secuencia .frame span.hora {
+	font-size: 15px;
 	background: black;
 	color: white;
+	text-align: center;
 }
