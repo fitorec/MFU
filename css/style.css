@@ -28,8 +28,12 @@ button:hover{
 /*#resultados{display:none}*/
 #resultados table{
 	width: 100%;
+	border-collapse: collapse;
 }
-
+table, th, td {
+    border: 1px solid rgba(0,0,0,0.5);
+    text-align: center;
+}
 #resultados button[disabled=disabled]:hover,
 #resultados button[disabled=disabled] {
 	background: #BFBFBF;
@@ -56,15 +60,21 @@ button:hover{
 	width: 70px;
 	margin: 0;
 	border-right: 1px solid rgba(0,0,0,0.5);
+	border-bottom: 1px solid rgba(0,0,0,0.5);
 }
+.secuencia:first-child {
+	border-left: 1px solid rgba(0,0,0,0.5);
+}
+
 .secuencia h3{
 	text-align: center;
 }
 .secuencia .frame{
 	margin: 3px;
 	background: #BFBFBF;
-	border-radius: 15px;
+	border-radius: 10px;
 	overflow: hidden;
+	box-shadow:inset 20px 20px 20px rgba(255,255,255,0.1), inset -20px -20px 20px rgba(0,0,0,0.2);
 }
 
 .secuencia .frame.fallo {
@@ -76,11 +86,12 @@ button:hover{
 }
 .secuencia .frame span.frecuencia {
 	display: inline;
-	padding: 0 15px;
+	padding: 0 10px;
 	background: #A90808;
 	color: white;
 	border-radius: 20px;
 	float: right;
+	box-shadow:inset -10px -10px 10px rgba(0,0,0,0.2), inset 10px 10px 10px rgba(0,0,0,0.2);
 }
 .secuencia.con-fallo .frame span.frecuencia{
 	background: #540000;
@@ -89,6 +100,7 @@ button:hover{
 	padding-top: 20px;
 	font-size: 50px;
 	text-align: center;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
 }
 
 .secuencia .frame span.hora {
@@ -96,4 +108,5 @@ button:hover{
 	background: black;
 	color: white;
 	text-align: center;
+	border-top: 1px solid white;
 }
